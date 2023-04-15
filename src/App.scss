@@ -27,7 +27,58 @@ $pale-blue: hsl(236, 100%, 87%);
 #root {
   max-width: 1280px;
   margin: 0 auto;
-  padding: 2rem;
   text-align: center;
 }
+
+.App {
+  padding: 0 2rem;
+
+  .user-control .user-info{
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+    padding: 2rem 0;
+    border-radius: 10px;
+
+    background-color: $blue;
+
+    img {
+      width: 60px;
+      height: 60px;
+      border-radius: 50%;
+      border: 2px solid white;
+    }
+
+    .user-fullname {
+      text-align: left;
+
+
+      span{
+        font-size: .75rem;
+        color: gray;
+      }
+      p{
+        font-size: 1rem;
+        font-weight: 300;
+      }
+    }
+
+
+  }
+
+  .user-control .time-selector {
+
+    display: flex;
+    background-color: $dark-blue;
+    justify-content: space-between;
+    padding: 1rem 2rem;
+    color: $desaturated-blue;
+    border-radius: 0 0 10px 10px;
+    .current {
+      font-weight: 600;
+      color: white;
+    }
+  }
+}
+
 
