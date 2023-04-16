@@ -1,3 +1,10 @@
+
+@mixin desktop {
+  @media (min-width: 768px) {
+    @content;
+  }
+}
+
 // ## Colors
 
 // ### Primary
@@ -57,13 +64,28 @@ $pale-blue: hsl(236, 100%, 87%);
       span{
         font-size: .75rem;
         color: gray;
+
+        @include desktop {
+          font-size: 1rem;
+        }
       }
       p{
         font-size: 1rem;
         font-weight: 300;
+
+        @include desktop {
+          font-size: 2rem;
+          width: 14rem;
+        }
       }
     }
 
+    @include desktop {
+      flex-direction: column;
+      padding: 2rem 2rem;
+      gap: 1rem;
+      height: 60%;
+    }
 
   }
 
@@ -80,6 +102,20 @@ $pale-blue: hsl(236, 100%, 87%);
       font-weight: 600;
       color: white;
     }
+
+    span {
+      cursor: pointer;
+
+      &:hover {
+        color: white;
+      }
+    }
+
+    @include desktop {
+      flex-direction: column;
+      text-align: left;
+      gap: 1rem;
+    }
   }
 
   .time-cards {
@@ -87,6 +123,30 @@ $pale-blue: hsl(236, 100%, 87%);
     flex-direction: column;
     gap: 2rem;
     margin-top: 2rem;
+
+    @include desktop {
+      margin-top: 0;
+
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      grid-template-rows: 1fr 1fr;
+      row-gap: 1.5rem;
+      column-gap: 1.5rem;
+
+      // .card-outer {
+      //   width: 17rem;
+      //   margin-inline: auto;
+      // }
+    }
+  }
+
+
+  @include desktop {
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+    padding: 0;
+    column-gap: 2rem;
+    margin: 0;
   }
 }
 

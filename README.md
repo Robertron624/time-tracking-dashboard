@@ -39,8 +39,8 @@ Then crop/optimize/edit your image however you like, add it to your project, and
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: [Solution URL](https://github.com/Robertron624/time-tracking-dashboard)
+- Live Site URL: [Live site URL](https://your-live-site-url.com)
 
 ## My process
 
@@ -53,6 +53,7 @@ Then crop/optimize/edit your image however you like, add it to your project, and
 - Mobile-first workflow
 - [React](https://reactjs.org/) - JS library
 - [Sass](https://sass-lang.com/) - For styles
+- [Zustand](https://docs.pmnd.rs/zustand/getting-started/introduction) - For state management
 
 
 ### What I learned

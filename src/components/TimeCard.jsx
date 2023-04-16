@@ -8,8 +8,6 @@ const TimeCard = ({card}) => {
 
     const time = useStore(state => state.time)
 
-    // console.log("time from TimeCard -> ", time)
-
     const lastText = time == 'daily' ? 'Yesterday' : time == 'weekly' ? 'Last Week' : 'Last Month'
 
 

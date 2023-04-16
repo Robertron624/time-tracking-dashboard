@@ -1,5 +1,6 @@
 $dark-blue: hsl(235, 46%, 20%);
 $desaturated-blue: hsl(235, 45%, 61%);
+$pale-blue: hsl(236, 100%, 87%);
 
 // (work)
 $light-red-orange: hsl(15, 100%, 70%);
@@ -14,6 +15,12 @@ $violet : hsl(264, 64%, 52%);
 // (self care)
 $soft-orange : hsl(43, 84%, 65%);
 
+@mixin desktop {
+    @media (min-width: 768px) {
+        @content;
+    }
+}
+
 .card {
     text-align: left;
     .card_header{
@@ -25,13 +32,22 @@ $soft-orange : hsl(43, 84%, 65%);
     }
 
     .card_body{
-        // height: 100px;
         background-color: $dark-blue;
         padding: 2rem;
         display: flex;
         flex-direction: column;
         border-radius: 20px;
         margin-top: -1rem;
+        cursor: pointer;
+        transition: all .5s ease-in-out;
+
+        &:hover {
+            background-color: $desaturated-blue;
+
+            .current_previous .previous {
+                color: $dark-blue;
+            }
+        }
 
         .card_title {
             display: flex;
@@ -65,6 +81,10 @@ $soft-orange : hsl(43, 84%, 65%);
                 font-weight: 300;
                 color: $desaturated-blue;
             }
+        }
+
+        @include desktop {
+            padding: 4rem 2rem;
         }
 
     }

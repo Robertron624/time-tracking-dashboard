@@ -134,7 +134,7 @@ function App() {
       </div>
       <div className="time-cards">
         {cardsData.map((card, i) => (
-          <div key={i}><TimeCard card={card}/></div>
+          <div className='card-outer' key={i}><TimeCard card={card}/></div>
         ))}
       </div>
     </main>
