@@ -10,6 +10,8 @@ const TimeCard = ({card}) => {
 
     // console.log("time from TimeCard -> ", time)
 
+    const lastText = time == 'daily' ? 'Yesterday' : time == 'weekly' ? 'Last Week' : 'Last Month'
+
 
   return (
     <div className={`${styles.card} ${styles[title]}`}>
@@ -23,7 +25,7 @@ const TimeCard = ({card}) => {
             </div>
             <div className={styles.current_previous}>
                 <p className={styles.current}>{timeframes[time].current}hrs</p>
-                <span className={styles.previous}>Last Week-{timeframes[time].previous}hrs</span>
+                <span className={styles.previous}>{lastText} - {timeframes[time].previous}hrs</span>
             </div>
         </div>
     </div>

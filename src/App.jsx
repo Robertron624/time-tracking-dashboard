@@ -133,8 +133,8 @@ function App() {
         </div>
       </div>
       <div className="time-cards">
-        {cardsData.map((card) => (
-          <TimeCard card={card}/>
+        {cardsData.map((card, i) => (
+          <div key={i}><TimeCard card={card}/></div>
         ))}
       </div>
     </main>

@@ -17,7 +17,7 @@ $soft-orange : hsl(43, 84%, 65%);
 .card {
     text-align: left;
     .card_header{
-        height: 35px;
+        height: 45px;
         border-radius: 20px 20px 0 0;
         background-repeat: no-repeat;
         background-position: right 20px top;
@@ -25,12 +25,13 @@ $soft-orange : hsl(43, 84%, 65%);
     }
 
     .card_body{
-        height: 100px;
+        // height: 100px;
         background-color: $dark-blue;
-        padding: 1rem 2rem 0;
+        padding: 2rem;
         display: flex;
         flex-direction: column;
         border-radius: 20px;
+        margin-top: -1rem;
 
         .card_title {
             display: flex;
