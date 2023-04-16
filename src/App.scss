@@ -31,11 +31,12 @@ $pale-blue: hsl(236, 100%, 87%);
 }
 
 .App {
-  padding: 0 2rem;
+  padding: 0 1rem;
+  margin: 4rem 0;
 
   .user-control .user-info{
     display: flex;
-    gap: 1rem;
+    gap: 4rem;
     justify-content: center;
     padding: 2rem 0;
     border-radius: 10px;
@@ -78,6 +79,13 @@ $pale-blue: hsl(236, 100%, 87%);
       font-weight: 600;
       color: white;
     }
+  }
+
+  .time-cards {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    margin-top: 2rem;
   }
 }
 

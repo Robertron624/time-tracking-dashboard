@@ -1,0 +1,113 @@
+$dark-blue: hsl(235, 46%, 20%);
+$desaturated-blue: hsl(235, 45%, 61%);
+
+// (work)
+$light-red-orange: hsl(15, 100%, 70%);
+// (play)
+$soft-blue : hsl(195, 74%, 62%);
+// (study)
+$light-red : hsl(348, 100%, 68%);
+// (exercise)
+$lime-green : hsl(145, 58%, 55%);
+// (social)
+$violet : hsl(264, 64%, 52%);
+// (self care)
+$soft-orange : hsl(43, 84%, 65%);
+
+.card {
+    text-align: left;
+    .card_header{
+        height: 35px;
+        border-radius: 20px 20px 0 0;
+        background-repeat: no-repeat;
+        background-position: right 20px top;
+        background-size: contain;
+    }
+
+    .card_body{
+        height: 100px;
+        background-color: $dark-blue;
+        padding: 1rem 2rem 0;
+        display: flex;
+        flex-direction: column;
+        border-radius: 20px;
+
+        .card_title {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+
+            .card_title_text {
+                font-size: 1.2rem;
+                font-weight: 600;
+                color: white;
+            }
+
+            .card_menu {
+                height: 5px;
+                width: 20px;
+            }
+        }
+    
+        .current_previous {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+
+            .current {
+                font-size: 2rem;
+                font-weight: 300;
+            }
+
+            .previous {
+                font-size: .875rem;
+                font-weight: 300;
+                color: $desaturated-blue;
+            }
+        }
+
+    }
+
+}
+
+.Work {
+    .card_header {
+        background-color: $light-red-orange;
+        background-image: url(/icon-work.svg);
+    }
+}
+
+.Play {
+    .card_header {
+        background-color: $soft-blue;
+        background-image: url(/icon-play.svg);
+    }
+}
+
+.Study {
+    .card_header {
+        background-color: $light-red;
+        background-image: url(/icon-study.svg);
+    }
+}
+
+.Exercise {
+    .card_header {
+        background-color: $lime-green;
+        background-image: url(/icon-exercise.svg);
+    }
+}
+
+.Social {
+    .card_header {
+        background-color: $violet;
+        background-image: url(/icon-social.svg);
+    }
+}
+
+.SelfCare {
+    .card_header {
+        background-color: $soft-orange;
+        background-image: url(/icon-self-care.svg);
+    }
+}
