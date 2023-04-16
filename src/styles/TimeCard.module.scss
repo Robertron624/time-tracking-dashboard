@@ -63,6 +63,11 @@ $soft-orange : hsl(43, 84%, 65%);
             .card_menu {
                 height: 5px;
                 width: 20px;
+                color: $pale-blue;
+
+                &:hover {
+                    color: white;
+                }
             }
         }
     

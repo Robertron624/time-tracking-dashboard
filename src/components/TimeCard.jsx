@@ -19,7 +19,7 @@ const TimeCard = ({card}) => {
         <div className={styles.card_body}>
             <div className={styles.card_title}>
                 <h2 className={styles.card_title_text}>{title == 'SelfCare' ? 'Self Care': title}</h2>
-                <img className={styles.card_menu} src="icon-ellipsis.svg" alt="card config image" />
+                <svg className={styles.card_menu} width="21" height="5" xmlns="http://www.w3.org/2000/svg"><path d="M2.5 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Zm8 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Zm8 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Z" fill="currentcolor" fill-rule="evenodd"/></svg>
             </div>
             <div className={styles.current_previous}>
                 <p className={styles.current}>{timeframes[time].current}hrs</p>
