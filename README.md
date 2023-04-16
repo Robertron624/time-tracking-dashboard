@@ -26,12 +26,13 @@ Users should be able to:
 - Switch between viewing Daily, Weekly, and Monthly stats
 
 ### Screenshot
+![image](https://user-images.githubusercontent.com/72587880/232316647-bcb48307-641e-412d-a6c4-a47575f7d7db.png)
 
 
 ### Links
 
 - Solution URL: [Solution URL](https://github.com/Robertron624/time-tracking-dashboard)
-- Live Site URL: [Live site URL](https://your-live-site-url.com)
+- Live Site URL: [Live site URL](https://prismatic-pony-c65ec0.netlify.app/)
 
 ## My process
 
